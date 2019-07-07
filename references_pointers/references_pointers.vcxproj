@@ -124,7 +124,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="multi_dimentional_arrays_pointers.cpp" />
+    <ClCompile Include="pointer_arthematic.cpp" />
     <ClCompile Include="references.cpp" />
+    <ClCompile Include="static_cast.cpp" />
+    <ClCompile Include="use_of_virtual.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,5 +18,17 @@
     <ClCompile Include="references.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="multi_dimentional_arrays_pointers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer_arthematic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="static_cast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="use_of_virtual.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

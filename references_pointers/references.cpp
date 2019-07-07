@@ -30,5 +30,18 @@ int main() {
 	//references to pointers
 	int*& ref3 = pi;
 	cout << *(*&ref3) << endl; //dereferencing a reference to pointer's value
+
+	//references to const
+	const int ci = 42;
+	const int& ri = ci;
+	const int& rr = ci;
 	
+	double dval = 3.14;
+	const int& ria = dval; //a double value is converted to int 
+	cout << ria << endl;
+
+	//constant pointers
+	int const* const_ptr = &ci;
+	cout << "Constant pointer value is " << *const_ptr << endl;
+
 }
