@@ -12,13 +12,12 @@ public:
 class Tree {
 public:
 	Node* reverseTree(Node* root) {
-		if (root != nullptr)
-			left = reverseTree(root->left);
-			right = reverseTree(root->right);
-			root->left = right;
-			root->right = left;
-			
-			root->left, root->right = reverseTree(root->left), reverseTree(root->right);
+		Node* tmp = new Node();
+		if (root != nullptr) {
+			tmp = reverseTree(root->right);
+			root->right = reverseTree(root->left);
+			root->left = tmp;
+		}
 		return root;
 	}
 
