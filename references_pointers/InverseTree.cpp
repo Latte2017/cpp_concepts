@@ -1,4 +1,5 @@
 #include<iostream>
+#include <stack>
 
 using namespace std;
 
@@ -11,12 +12,28 @@ public:
 
 class Tree {
 public:
-	Node* reverseTree(Node* root) {
+	Node* inverseTree(Node* root) {
 		Node* tmp = new Node();
 		if (root != nullptr) {
-			tmp = reverseTree(root->right);
-			root->right = reverseTree(root->left);
+			tmp = inverseTree(root->right);
+			root->right = inverseTree(root->left);
 			root->left = tmp;
+		}
+		return root;
+	}
+
+	Node* inverseTree_2(Node* root) {
+		std::stack<Node*> stk;
+		stk.push(root);
+
+		while (!stk.empty()) {
+			Node* p = stk.top();
+			stk.pop();
+			if (p) {
+				stk.push(p->left);
+				stk.push(p->right);
+				std::swap(p->left, p->right);
+			}
 		}
 		return root;
 	}
@@ -43,7 +60,7 @@ int main() {
 	root->right->right = right_right;
 	Tree tr1;
 	//ret_node = tr1.val(root);
-	ret_node = tr1.reverseTree(root);
+	ret_node = tr1.inverseTree_2(root);
 	cout << ret_node->left->val << ret_node->right->val <<  endl;
 	//int x, y = 1, 2;
 

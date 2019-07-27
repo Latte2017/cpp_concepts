@@ -57,5 +57,11 @@
     <ClCompile Include="InverseTree.cpp">
       <Filter>Source Files\Binary_tree</Filter>
     </ClCompile>
+    <ClCompile Include="KthSmallestElement.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="maxDepth.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
