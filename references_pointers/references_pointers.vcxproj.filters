@@ -16,6 +16,9 @@
     <Filter Include="Source Files\Binary_tree">
       <UniqueIdentifier>{e02136d0-a530-4d25-afeb-b514d382a5d2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Graph">
+      <UniqueIdentifier>{ddae0f59-214d-4439-b2a8-e6c958ba87e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="references.cpp">
@@ -39,16 +42,7 @@
     <ClCompile Include="linked_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bfs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DFS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DFS_version2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BFS_version2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DetectCycleInGraph.cpp">
@@ -62,6 +56,33 @@
     </ClCompile>
     <ClCompile Include="maxDepth.cpp">
       <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHeightTree.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="validateBST.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="FlatternToLinkedList.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="BFS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SumPath.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="SortedArrayBST.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstructInorderFromPreOrder.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="BalancedBinaryTree.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="RouteBetweenTwoNodes.cpp">
+      <Filter>Source Files\Graph</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

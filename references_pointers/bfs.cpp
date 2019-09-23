@@ -1,104 +1,69 @@
 #include<iostream>
 #include<queue>
 #include<vector>
-#include<stack>
 
 using namespace std;
 
-
-class Graph
-{
+class Graph {
 private:
-	int V;    // No. of vertices 
-	// Pointer to an array containing adjacency. Single matrix for the whole graph 
-	int adj[16] = {0};
-	
+	int V; //number of vertices
+	vector<int>* adj;
+	bool* visited;
 	vector<int> ret_vt;
-	// prints traversal from a given source s 
-	void printtraversal(vector<int>* s) {
-		for (int i = 0; i < s->size(); i++) {
-			cout << s->at(i) << endl;
-		}
-		return;
-	}
+	queue<int> qu;
 public:
-	Graph(int v) {
-		V = v;
+	Graph(int NumOfNodes) {
+		this->V = NumOfNodes;
+		adj = new vector<int>[V];
 	}
 
-	void addEdge(int v, int u) {
-		adj[u + (V * v)] = 1;
-		adj[v + (V * u)] = 1;
+	void addEge(int u, int v) {
+		adj[u].push_back(v);
+		adj[v].push_back(u);
 	}
 
+	void printRoute() {
+		vector<int>::iterator it;
+		for (it = ret_vt.begin(); it != ret_vt.end(); ++it) {
+			cout << *it << " -> ";
+		}
+		cout << "NULL " << endl;
+	}
 
 	void BFS(int node) {
-		queue<int> qu;
-		
-		bool* visited = new bool(V);
-		for (int i = 0; i < V; i++)
+		visited = new bool[V];
+		for (int i = 0; i < V; i++) {
 			visited[i] = false;
+		}
+		BfsUtil(node, visited);
+		printRoute();
+	}
+
+	void BfsUtil(int node, bool visited[]) {
 		qu.push(node);
 		while (!qu.empty()) {
-			int node = qu.front();
-			if (!visited[node]) {
-				ret_vt.push_back(node);
-				visited[node] = true;
-				for (int i = 0; i < V; i++) {
-					if (adj[(node * V) + i] == 1 && visited[i] == false) {
-						qu.push(i);
-					}
-				}
+			vector<int>::iterator it;
+			node = qu.front();
+			for (it = adj[node].begin(); it != adj[node].end(); ++it) {
+				if(visited[*it] == false)
+					qu.push(*it);
 			}
+			visited[node] = true;
+			ret_vt.push_back(node);
 			qu.pop();
 		}
-		//printtraversal(&ret_vt);
-		//delete visited;
 		return;
 	}
-
-	void DFS(int node) {
-		stack<int> st;
-		int col;
-		bool* visited = new bool(V);
-		for (int i = 0; i < V; i++)
-			visited[i] = false;
-		st.push(node);
-		ret_vt.push_back(node);
-		while (!st.empty()) {
-			col = 0;
-			while (true) {
-				if (adj[V * node + col] == 1 and visited[col] == false) {
-					st.push(col);
-					ret_vt.push_back(col);
-					visited[node] = true;
-					break;
-				}
-				else if (adj[V * node + col] == 1 and visited[col] == true)
-					st.pop();
-				col++;
-			}
-		}
-		printtraversal(&ret_vt);
-		return;
-	}
-
-	
 };
 
 
 int main() {
-	Graph g(8);
-	g.addEdge(0, 2);
-	g.addEdge(0, 3);
-	g.addEdge(1, 2);
-	g.addEdge(1, 7);
-	g.addEdge(1, 5);
-	g.addEdge(3,4);
-	g.addEdge(3,5);
-	g.addEdge(4,5);
+	Graph g(6);
+	g.addEge(0, 1);
+	g.addEge(0,5);
+	g.addEge(5,2);
+	g.addEge(1,4);
+	g.addEge(4,3);
 	g.BFS(0);
-	//g.DFS(0);
 	return 0;
 }
-
