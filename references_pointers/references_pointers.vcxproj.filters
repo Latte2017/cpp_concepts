@@ -84,5 +84,13 @@
     <ClCompile Include="RouteBetweenTwoNodes.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="traversal.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Different_types_of_Trees_and_traversals.txt">
+      <Filter>Source Files\Binary_tree</Filter>
+    </Text>
   </ItemGroup>
 </Project>
