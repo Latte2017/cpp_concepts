@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Binary_tree">
-      <UniqueIdentifier>{e02136d0-a530-4d25-afeb-b514d382a5d2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Graph">
-      <UniqueIdentifier>{ddae0f59-214d-4439-b2a8-e6c958ba87e3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\OOPs">
       <UniqueIdentifier>{92f20d39-1ad4-479e-a89d-e6bb713f482e}</UniqueIdentifier>
     </Filter>
@@ -45,67 +39,11 @@
     <ClCompile Include="linked_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DFS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DetectCycleInGraph.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="InverseTree.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="KthSmallestElement.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="maxDepth.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="MinHeightTree.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="validateBST.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="FlatternToLinkedList.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="BFS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SumPath.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="SortedArrayBST.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="ConstructInorderFromPreOrder.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="BalancedBinaryTree.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="RouteBetweenTwoNodes.cpp">
-      <Filter>Source Files\Graph</Filter>
-    </ClCompile>
-    <ClCompile Include="traversal.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="avl.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
-    <ClCompile Include="avl2.cpp">
-      <Filter>Source Files\Binary_tree</Filter>
-    </ClCompile>
     <ClCompile Include="encapsulation.cpp">
       <Filter>Source Files\OOPs</Filter>
     </ClCompile>
     <ClCompile Include="abstraction.cpp">
       <Filter>Source Files\OOPs</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Different_types_of_Trees_and_traversals.txt">
-      <Filter>Source Files\Binary_tree</Filter>
-    </Text>
   </ItemGroup>
 </Project>
