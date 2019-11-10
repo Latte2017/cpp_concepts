@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Graph">
       <UniqueIdentifier>{ddae0f59-214d-4439-b2a8-e6c958ba87e3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\OOPs">
+      <UniqueIdentifier>{92f20d39-1ad4-479e-a89d-e6bb713f482e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="references.cpp">
@@ -86,6 +89,18 @@
     </ClCompile>
     <ClCompile Include="traversal.cpp">
       <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="avl.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="avl2.cpp">
+      <Filter>Source Files\Binary_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="encapsulation.cpp">
+      <Filter>Source Files\OOPs</Filter>
+    </ClCompile>
+    <ClCompile Include="abstraction.cpp">
+      <Filter>Source Files\OOPs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
