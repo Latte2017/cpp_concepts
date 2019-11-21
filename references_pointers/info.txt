@@ -1,0 +1,11 @@
+Compile time:
+	Operator Overloading: The process of making an operator to exhibit different 
+		behaviours in different instances is known as operator overloading.
+	Function Overloading: Function overloading is using a single 
+		function name to perform different types of tasks.
+
+Run time:
+	virtual functions
+
+
+*/

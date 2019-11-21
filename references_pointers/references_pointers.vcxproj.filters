@@ -16,6 +16,18 @@
     <Filter Include="Source Files\OOPs">
       <UniqueIdentifier>{92f20d39-1ad4-479e-a89d-e6bb713f482e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\OOPs\polymorphism">
+      <UniqueIdentifier>{23b2f820-8abf-445e-bd5c-475bfa10a760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OOPs\polymorphism\Runtime">
+      <UniqueIdentifier>{d0c92e91-8a02-4dfb-9725-868a2f9722e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OOPs\polymorphism\Compile">
+      <UniqueIdentifier>{d2420180-b818-4307-940d-13f5030fa316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\STL">
+      <UniqueIdentifier>{2600033a-cf70-4ec6-93f0-af36316849f1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="references.cpp">
@@ -30,9 +42,6 @@
     <ClCompile Include="static_cast.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="use_of_virtual.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="bit_manipulations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -45,5 +54,25 @@
     <ClCompile Include="abstraction.cpp">
       <Filter>Source Files\OOPs</Filter>
     </ClCompile>
+    <ClCompile Include="Inheritance.cpp">
+      <Filter>Source Files\OOPs</Filter>
+    </ClCompile>
+    <ClCompile Include="design_time.cpp">
+      <Filter>Source Files\OOPs\polymorphism\Compile</Filter>
+    </ClCompile>
+    <ClCompile Include="run_time.cpp">
+      <Filter>Source Files\OOPs\polymorphism\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.cpp">
+      <Filter>Source Files\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="set.cpp">
+      <Filter>Source Files\STL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="info.txt">
+      <Filter>Source Files\OOPs\polymorphism</Filter>
+    </Text>
   </ItemGroup>
 </Project>
