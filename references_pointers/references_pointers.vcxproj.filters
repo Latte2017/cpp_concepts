@@ -93,6 +93,12 @@
     <ClCompile Include="UseBitVector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="diamond_problem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Copy_Constructor_vs_Assignment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="info.txt">

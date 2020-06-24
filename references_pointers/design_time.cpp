@@ -34,3 +34,16 @@ public:
 		cout << "real part is " << x << "imaginary part is " << y << endl;
 	}
 };
+
+
+int main() {
+	func_overloading f1;
+	int output = f1.sum(1, 2, 3);
+	float a = 1.1, b = 2.2, c = 3.3;
+	float output2 = f1.sum(a,b,c);
+	cout << output2 << endl;
+	Complex c1(a,b), c2(a,b);
+	Complex c3 = c1 + c2;
+	c3.print();
+
+}

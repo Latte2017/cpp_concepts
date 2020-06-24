@@ -17,6 +17,8 @@ public:
 
 class B :public A {
 public:
+	B() {};
+	//override keyword makes compile time checks instead of run time
 	int func1(int) override {
 		cout << "Class B is called. func1 called" << endl;
 		return 0;
@@ -27,7 +29,8 @@ public:
 int main() {
 	A* cls1;
 	B cls2;
+
 	cls1 = &cls2;
 	cls1->func1(3);	
-	cls1->func1(3);
+	
 }

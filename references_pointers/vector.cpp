@@ -1,5 +1,5 @@
 /*
-Vectors are dynamic array with a capacity of 1.6 times. The vectors are reallocated once the capacity is reached.
+Vectors are dynamic array. The vectors are reallocated once the capacity is reached.
 */
 
 #include<iostream>

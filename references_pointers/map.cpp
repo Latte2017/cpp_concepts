@@ -15,5 +15,6 @@ int main() {
 	for (auto c : mystring) {
 		f1[c]++;
 	}
-	cout << f1['s'] << endl;
+	cout << f1['v'] << endl;
+	cout << f1.at('v') << endl;
 }
