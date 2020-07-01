@@ -45,9 +45,6 @@
     <ClCompile Include="bit_manipulations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="linked_list.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="encapsulation.cpp">
       <Filter>Source Files\OOPs</Filter>
     </ClCompile>
@@ -78,9 +75,6 @@
     <ClCompile Include="smart_ptr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="virtual_functions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="lamda_func.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -93,16 +87,25 @@
     <ClCompile Include="UseBitVector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="diamond_problem.cpp">
+    <ClCompile Include="Sort_2d_vector.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="read_and_write_to_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual_functions.cpp">
+      <Filter>Source Files\OOPs</Filter>
     </ClCompile>
     <ClCompile Include="Copy_Constructor_vs_Assignment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Object_Slicing.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="diamond_problem.cpp">
+      <Filter>Source Files\OOPs</Filter>
     </ClCompile>
-    <ClCompile Include="Sort_2d_vector.cpp">
+    <ClCompile Include="Object_Slicing.cpp">
+      <Filter>Source Files\OOPs</Filter>
+    </ClCompile>
+    <ClCompile Include="linked_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -110,5 +113,10 @@
     <Text Include="info.txt">
       <Filter>Source Files\OOPs\polymorphism</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Documents\STL_Containers.png">
+      <Filter>Source Files\STL</Filter>
+    </Image>
   </ItemGroup>
 </Project>

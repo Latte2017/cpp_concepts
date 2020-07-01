@@ -26,6 +26,17 @@ public:
 		//find is logn and delete is 1
 		in.erase(num);
 	}
+
+	/*
+	//Set Difference. Difference of 2 maps but only checks keys
+	//Need to use a temporary map f3 and swap elements from f1 and f3 which is constant.
+	set_difference(f1.begin(), f1.end(), f2.begin(), f2.end(), inserter(f3,f3.begin()));
+	f1.swap(f3);
+
+	//Convert vector to set
+	//copy(v1.begin(), v1.end(), inserter(f3, f3.begin()));
+	
+	*/
 };
 
 class unorderedset {
