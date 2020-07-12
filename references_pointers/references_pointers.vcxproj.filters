@@ -28,6 +28,9 @@
     <Filter Include="Source Files\STL">
       <UniqueIdentifier>{2600033a-cf70-4ec6-93f0-af36316849f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Smart_pointers">
+      <UniqueIdentifier>{1048d9ab-0694-4ea4-9f7d-7297770b8246}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="references.cpp">
@@ -72,9 +75,6 @@
     <ClCompile Include="decltype.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="smart_ptr.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="lamda_func.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -106,6 +106,15 @@
       <Filter>Source Files\OOPs</Filter>
     </ClCompile>
     <ClCompile Include="linked_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Create_shared_pointer.cpp">
+      <Filter>Source Files\Smart_pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="smart_ptr_usage.cpp">
+      <Filter>Source Files\Smart_pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

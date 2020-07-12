@@ -38,6 +38,10 @@ int main() {
 		{2,3,4}
 	};
 	
+	// 2d vector initialization
+	vector<vector<int>> iput(10, vector<int>(10, 0));
+
+
 	//Sorted s1;
 	//s1.ByColumn(input_vec);
 	sort(input_vec.begin(), input_vec.end(), sortcol);

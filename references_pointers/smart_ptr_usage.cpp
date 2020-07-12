@@ -38,7 +38,7 @@ int main() {
 			shared_ptr<Entity> e3;
 			{
 				shared_ptr<Entity> e4 = make_shared<Entity>();
-				e3 = e4;
+				//e3 = e4;
 			}
 		}
 
