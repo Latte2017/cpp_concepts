@@ -1,6 +1,6 @@
 #include<vector>
 #include<iostream>
-
+#include<string>
 using namespace std;
 
 int main() {
@@ -18,5 +18,8 @@ int main() {
 			multi_v1[i][j] = 10;
 		}
 	}
-	cout << multi_v1[0][0] << endl;
+	char ch = 'b';
+	cout << toupper(ch) << endl;
+	//cout << multi_v1[0][0] << endl;
+
 }

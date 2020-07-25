@@ -2,6 +2,8 @@
 Read and write to file
 */
 
+
+
 #include<string>
 #include <iostream>
 #include<istream>
@@ -12,6 +14,7 @@ Read and write to file
 #include<filesystem>
 #include <string>
 #include <windows.h>
+
 using namespace std;
 
 class FileIO {
@@ -84,6 +87,15 @@ public:
 		}
 
 	}
+
+	//Get execution running directory 
+	wstring ExePath() {
+		TCHAR buffer[MAX_PATH] = { 0 };
+		GetModuleFileName(NULL, buffer, MAX_PATH);
+		std::wstring::size_type pos = std::wstring(buffer).find_last_of(L"\\/");
+		return std::wstring(buffer).substr(0, pos);
+	}
+
 
 
 	void DeleteFile() {

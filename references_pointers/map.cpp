@@ -11,6 +11,37 @@ unordered map: hash table. If map resizes it invalidates iterators but otherwise
 #include<vector>
 using namespace std;
 
+struct Details {};
+
+
+class X
+{
+public:
+	int id;
+	int subId;
+};
+
+struct Comparator
+{
+	using is_transparent = std::true_type;
+
+	// standard comparison (between two instances of X)
+	bool operator()(const X& lhs, const X& rhs) const { return lhs.id < rhs.id; }
+
+	// comparison via id (compares X with integer)
+	bool operator()(const X& lhs, int rhs) const { return lhs.id < rhs; }
+	bool operator()(int lhs, const X& rhs) const { return lhs < rhs.id; }
+
+};
+
+
+
+
+
+
+
+
+
 int main() {
 	map<char, int> f1, f2, f3;
 	string mystring = "aabbccd";
@@ -51,5 +82,22 @@ int main() {
 	//Upper bound is next larger element.
 	//If it doesnt exist return end
 	cout << (f1.upper_bound('a'))->first << endl;
-	
+
+
+	std::map<X, Details, Comparator> detailsMap = {
+		{ X{1, 2}, Details{} },
+		{ X{3, 4}, Details{} },
+		{ X{5, 6}, Details{} }
+	};
+
+	// it1 and it2 point to the same element.
+	auto it1 = detailsMap.find(X{ 1, 2 });
+	auto it2 = detailsMap.find(1);
+
+	//std::cout << detailsMap.size() << std::endl;
+	//std::cout << std::boolalpha << (it1 == detailsMap.end()) << std::endl; // false
+	//std::cout << std::boolalpha << (it1 == it2) << std::endl; // true
+
+
+
 }
