@@ -1,5 +1,10 @@
 // CPP program to illustrate 
 // concept of Virtual Functions 
+//function overriding
+/*
+Virtual functions allow us to create a list of base class pointers 
+and call methods of any of the derived classes without even knowing kind of derived class object
+*/
 #include<iostream> 
 using namespace std;
 
